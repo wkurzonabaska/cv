@@ -1,0 +1,94 @@
+.aboutMe {
+    .person {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        .person-info {
+            width: 50%;
+            padding: 0 50px;
+            text-align: left;
+
+            h4 {
+                margin: 0 0 15px 0;
+                color: $personalInfoColor;
+                font-weight: 300;
+
+            }
+
+            h2 {
+                margin: 0 0 30px 0;
+                @include fluid-type (320px, 1290px, 30px, 46px);
+                color: $primaryColor
+            }
+
+            p {
+                color: $secondaryColor;
+                line-height: 1.5;
+            }
+
+        }
+
+        .person-photo {
+            width: 50%;
+            align-self: flex-start;
+
+            img {
+                width: 100%;
+                display: block;
+                border-radius: 50% 0% 50% 50%;
+            }
+        }
+    }
+
+    .container {
+
+        .stats {
+            display: flex;
+            margin: 0 -15px;
+
+            .stats-item {
+
+                width: calc(100%/3);
+                padding: 0 15px;
+
+                .border {
+
+                    padding: 20px;
+                    border-radius: 20px;
+                    box-shadow: 0 1px 5px rgb(0 0 0/15%);
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 2;
+
+                    i {
+                        position: absolute;
+                        font-size: 78px;
+                        inset: 50% auto auto 0;
+                        translate: -40% -50%;
+                        z-index: 1;
+                        color: $secondaryColor;
+                        opacity: 0.3;
+                    }
+
+                    .title {
+                        text-align: right;
+                        font-weight: 600px;
+                        color: $primaryColor;
+                        margin: 0 0 15px 0;
+                    }
+
+                    .number {
+                        text-align: right;
+
+                        font-size: 36px;
+                        color: $statsNumerColor;
+                        margin: 0;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
