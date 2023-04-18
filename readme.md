@@ -2,3 +2,4 @@
 technology:
 * html
 * css
+[My CV](https://wkurzonabaska.github.io/cv/)
